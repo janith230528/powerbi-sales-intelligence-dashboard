@@ -1,6 +1,44 @@
 table 'Sample - Superstore'
 	lineageTag: 5604fdab-d4fb-46e5-80be-e37769a255ad
 
+	measure 'Total Sales' = SUM('Sample - Superstore'[Sales])
+		formatString: #,0
+		lineageTag: eb506d0a-d1f9-4647-b658-183b75ddaa47
+
+	measure 'Total Profit' = SUM('Sample - Superstore'[Profit])
+		formatString: #,0
+		lineageTag: 3f0a34ec-6a76-4e61-a4c0-6d09b69aa6a4
+
+	measure 'Total Orders' = DISTINCTCOUNT('Sample - Superstore'[OrderID])
+		formatString: 0
+		lineageTag: 35e0dd94-4e20-4769-9ded-31c9c0ce02f8
+
+	measure 'Profit Margin %' = DIVIDE([Total Profit], [Total Sales], 0)
+		formatString: #,0.00%;-#,0.00%;#,0.00%
+		lineageTag: c02973a9-2198-4768-80db-f4051a7a2426
+
+	measure 'Avg Shipping Days' = AVERAGE('Sample - Superstore'[ShippingDays])
+		formatString: 0.0
+		lineageTag: fa1d5b3c-6e7a-4c19-9b0f-2d6a7e8c1001
+
+	measure 'Total Quantity' = SUM('Sample - Superstore'[Quantity])
+		formatString: #,0
+		lineageTag: fa1d5b3c-6e7a-4c19-9b0f-2d6a7e8c1002
+
+	measure 'Avg Discount %' = AVERAGE('Sample - Superstore'[Discount])
+		formatString: 0.0%
+		lineageTag: fa1d5b3c-6e7a-4c19-9b0f-2d6a7e8c1003
+
+	measure 'Total Customers' = DISTINCTCOUNT('Sample - Superstore'[Customer ID])
+		formatString: #,0
+		lineageTag: fa1d5b3c-6e7a-4c19-9b0f-2d6a7e8c1004
+
+	measure 'Monthly Sales Title' = "Total Sales by Month - " & SELECTEDVALUE('Sample - Superstore'[Order Year], "All Years")
+		lineageTag: fa1d5b3c-6e7a-4c19-9b0f-2d6a7e8c1005
+
+	measure 'Profit Color' = IF([Total Profit] < 0, "#C62828", "#2E7D32")
+		lineageTag: fa1d5b3c-6e7a-4c19-9b0f-2d6a7e8c1006
+
 	column RowID
 		dataType: int64
 		formatString: 0
@@ -205,12 +243,36 @@ table 'Sample - Superstore'
 	column ProfitMargin
 		dataType: double
 		lineageTag: ccadb349-59fc-4cf3-9125-90cefa4aa1b2
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: ProfitMargin
 
 		annotation SummarizationSetBy = Automatic
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Order Year' = YEAR('Sample - Superstore'[Order Date])
+		dataType: int64
+		formatString: 0
+		lineageTag: fa1d5b3c-6e7a-4c19-9b0f-2d6a7e8c2001
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Month No' = MONTH('Sample - Superstore'[Order Date])
+		dataType: int64
+		formatString: 0
+		lineageTag: fa1d5b3c-6e7a-4c19-9b0f-2d6a7e8c2002
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Month' = FORMAT('Sample - Superstore'[Order Date], "MMM")
+		dataType: string
+		lineageTag: fa1d5b3c-6e7a-4c19-9b0f-2d6a7e8c2003
+		summarizeBy: none
+		sortByColumn: 'Order Month No'
+
+		annotation SummarizationSetBy = Automatic
 
 	partition 'Sample - Superstore' = m
 		mode: import
