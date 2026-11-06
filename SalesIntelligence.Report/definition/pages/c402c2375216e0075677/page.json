@@ -3,7 +3,7 @@
   "name": "c402c2375216e0075677",
   "displayName": "Page 1",
   "displayOption": "ActualSize",
-  "height": 1500,
+  "height": 1180,
   "width": 1280,
   "objects": {
     "displayArea": [
@@ -45,7 +45,7 @@
               "color": {
                 "expr": {
                   "Literal": {
-                    "Value": "'#E0E0E0'"
+                    "Value": "'#DCF2FF'"
                   }
                 }
               }
@@ -106,42 +106,5 @@
         }
       }
     ]
-  },
-  "visualInteractions": [
-    {
-      "source": "b50b822542b26358f0d2",
-      "target": "7988c8b71e703b00ca0b",
-      "type": "NoFilter"
-    },
-    {
-      "source": "b50b822542b26358f0d2",
-      "target": "d9b25ec87aded5652a93",
-      "type": "NoFilter"
-    },
-    {
-      "source": "b50b822542b26358f0d2",
-      "target": "31f2d3e784471d09d293",
-      "type": "NoFilter"
-    },
-    {
-      "source": "b50b822542b26358f0d2",
-      "target": "2344334812e4d7230591",
-      "type": "NoFilter"
-    },
-    {
-      "source": "b50b822542b26358f0d2",
-      "target": "ec0e06c59aa40ae777c0",
-      "type": "NoFilter"
-    },
-    {
-      "source": "b50b822542b26358f0d2",
-      "target": "7f1039c10cc15109a886",
-      "type": "NoFilter"
-    },
-    {
-      "source": "b50b822542b26358f0d2",
-      "target": "8b4747426b7a00220c33",
-      "type": "NoFilter"
-    }
-  ]
+  }
 }

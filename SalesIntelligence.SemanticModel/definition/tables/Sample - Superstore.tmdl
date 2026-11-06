@@ -33,7 +33,7 @@ table 'Sample - Superstore'
 		formatString: #,0
 		lineageTag: fa1d5b3c-6e7a-4c19-9b0f-2d6a7e8c1004
 
-	measure 'Monthly Sales Title' = "Total Sales by Month - " & SELECTEDVALUE('Sample - Superstore'[Order Year], "All Years")
+	measure 'Monthly Sales Title' = "Total Sales by Month - " & IF(ISFILTERED('Sample - Superstore'[Order Year]), IF(HASONEVALUE('Sample - Superstore'[Order Year]), SELECTEDVALUE('Sample - Superstore'[Order Year]), "Selected Years"), "All Years")
 		lineageTag: fa1d5b3c-6e7a-4c19-9b0f-2d6a7e8c1005
 
 	measure 'Profit Color' = IF([Total Profit] < 0, "#C62828", "#2E7D32")

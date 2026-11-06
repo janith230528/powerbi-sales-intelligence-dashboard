@@ -3,7 +3,7 @@
   "name": "d957b89aabde300783c0",
   "displayName": "Page 2",
   "displayOption": "ActualSize",
-  "height": 1489,
+  "height": 2045,
   "width": 1280,
   "objects": {
     "displayArea": [
@@ -45,7 +45,7 @@
               "color": {
                 "expr": {
                   "Literal": {
-                    "Value": "'#E0E0E0'"
+                    "Value": "'#DCF2FF'"
                   }
                 }
               }

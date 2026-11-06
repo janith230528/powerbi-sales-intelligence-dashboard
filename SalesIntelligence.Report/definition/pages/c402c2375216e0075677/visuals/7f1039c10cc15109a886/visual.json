@@ -5,8 +5,9 @@
     "x": 33.402528779014943,
     "y": 25.833333333333258,
     "z": 1000,
-    "height": 728.33333333333337,
-    "width": 1197.4806567276844
+    "height": 368.34,
+    "width": 1197.4806567276844,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -22,11 +23,11 @@
                       "Entity": "Sample - Superstore"
                     }
                   },
-                  "Property": "Region"
+                  "Property": "Segment"
                 }
               },
-              "queryRef": "Sample - Superstore.Region",
-              "nativeQueryRef": "Region",
+              "queryRef": "Sample - Superstore.Segment",
+              "nativeQueryRef": "Segment",
               "active": true
             }
           ]
@@ -233,6 +234,37 @@
             }
           }
         }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1F4E79'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -274,6 +306,27 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Total Sales and Total Profit by Segment'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
                 }
               }
             }

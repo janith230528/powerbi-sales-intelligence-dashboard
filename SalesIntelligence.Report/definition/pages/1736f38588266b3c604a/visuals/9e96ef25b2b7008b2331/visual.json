@@ -3,11 +3,11 @@
   "name": "9e96ef25b2b7008b2331",
   "position": {
     "x": 1016.61,
-    "y": 168.52,
-    "z": 1500,
-    "height": 39.95,
-    "width": 172.53,
-    "tabOrder": 13000
+    "y": 155,
+    "z": 13000,
+    "height": 34,
+    "width": 220,
+    "tabOrder": 17000
   },
   "visual": {
     "visualType": "textbox",
@@ -22,7 +22,7 @@
                     "value": "Select Region",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "fontSize": "12pt",
+                      "fontSize": "14pt",
                       "color": "#ffffff"
                     }
                   }
@@ -41,6 +41,26 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }

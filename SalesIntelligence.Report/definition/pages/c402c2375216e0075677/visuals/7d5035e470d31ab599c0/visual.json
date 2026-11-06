@@ -3,10 +3,11 @@
   "name": "7d5035e470d31ab599c0",
   "position": {
     "x": 25.595238095238074,
-    "y": 88,
+    "y": 21.67,
     "z": 1000,
-    "height": 338,
-    "width": 661.66666666666674
+    "height": 396.67,
+    "width": 661.66666666666674,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "lineChart",
@@ -27,6 +28,25 @@
               },
               "queryRef": "Sample - Superstore.Order Month",
               "nativeQueryRef": "Order Month",
+              "active": true
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Sample - Superstore"
+                    }
+                  },
+                  "Property": "Order Year"
+                }
+              },
+              "queryRef": "Sample - Superstore.Order Year",
+              "nativeQueryRef": "Order Year",
               "active": true
             }
           ]
@@ -94,7 +114,7 @@
             "showAxisTitle": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -193,11 +213,38 @@
             "show": {
               "expr": {
                 "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
                   "Value": "true"
                 }
               }
             },
-            "color": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "labelColor": {
               "solid": {
                 "color": {
                   "expr": {
@@ -205,13 +252,6 @@
                       "Value": "'#1F4E79'"
                     }
                   }
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "11D"
                 }
               }
             }

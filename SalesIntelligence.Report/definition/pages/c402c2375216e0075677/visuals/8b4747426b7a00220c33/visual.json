@@ -2,11 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "8b4747426b7a00220c33",
   "position": {
-    "x": 0,
-    "y": 32.8557312252964,
-    "z": 0,
-    "height": 58.102766798418969,
-    "width": 257.35123114433463
+    "x": 1000.2199999999999,
+    "y": 172.22,
+    "z": 5000,
+    "height": 36,
+    "width": 257.35,
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "slicer",
@@ -58,13 +59,6 @@
               "expr": {
                 "Literal": {
                   "Value": "'Dropdown'"
-                }
-              }
-            },
-            "isInvertedSelectionMode": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
                 }
               }
             }
@@ -186,6 +180,20 @@
       "padding": [
         {
           "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
             "left": {
               "expr": {
                 "Literal": {
@@ -223,12 +231,11 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true,
     "syncGroup": {
       "groupName": "Region",
       "fieldChanges": true,
       "filterChanges": true
-    }
-  },
-  "parentGroupName": "1ccab136ddc15344d89a"
+    },
+    "drillFilterOtherVisuals": true
+  }
 }

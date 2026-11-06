@@ -3,11 +3,11 @@
   "name": "4246e12f71018fa0d7c7",
   "position": {
     "x": 21.14,
-    "y": 831,
-    "z": 1000,
+    "y": 1387,
+    "z": 10000,
     "height": 632,
     "width": 1236.29,
-    "tabOrder": 23000
+    "tabOrder": 32000
   },
   "visual": {
     "visualType": "pivotTable",
@@ -418,7 +418,6 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -498,6 +497,7 @@
           }
         }
       ]
-    }
+    },
+    "drillFilterOtherVisuals": true
   }
 }

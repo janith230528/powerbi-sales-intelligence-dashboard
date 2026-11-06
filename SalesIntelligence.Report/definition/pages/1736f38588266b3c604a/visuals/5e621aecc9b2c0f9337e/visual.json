@@ -4,10 +4,10 @@
   "position": {
     "x": 1040.3,
     "y": 46.5,
-    "z": 4000,
+    "z": 23000,
     "height": 43.97,
     "width": 102.8,
-    "tabOrder": 4000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "textbox",
@@ -54,33 +54,6 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "visualLink": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "type": {
-              "expr": {
-                "Literal": {
-                  "Value": "'PageNavigation'"
-                }
-              }
-            },
-            "navigationSection": {
-              "expr": {
-                "Literal": {
-                  "Value": "'d957b89aabde300783c0'"
                 }
               }
             }

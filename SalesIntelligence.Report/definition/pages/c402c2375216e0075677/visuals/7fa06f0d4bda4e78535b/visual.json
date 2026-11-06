@@ -3,10 +3,11 @@
   "name": "7fa06f0d4bda4e78535b",
   "position": {
     "x": 7.1428571428571432,
-    "y": 707.14285714285722,
-    "z": 5000,
-    "height": 780,
-    "width": 1264.2857142857144
+    "y": 747.14,
+    "z": 9000,
+    "height": 420,
+    "width": 1264.2857142857144,
+    "tabOrder": 10000
   },
   "visualGroup": {
     "displayName": "Group 8",

@@ -3,14 +3,14 @@
   "name": "520cf2b26b385cf4a4c7",
   "position": {
     "x": 21.14,
-    "y": 315,
-    "z": 1000,
+    "y": 355,
+    "z": 8000,
     "height": 352,
     "width": 592,
-    "tabOrder": 16000
+    "tabOrder": 22000
   },
   "visual": {
-    "visualType": "clusteredBarChart",
+    "visualType": "lineChart",
     "query": {
       "queryState": {
         "Category": {
@@ -235,7 +235,7 @@
             "showAxisTitle": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }

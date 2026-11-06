@@ -3,11 +3,11 @@
   "name": "9f6cdfa01c41685c7928",
   "position": {
     "x": 21.14,
-    "y": 707,
-    "z": 1000,
+    "y": 747,
+    "z": 10000,
     "height": 352,
     "width": 592,
-    "tabOrder": 20000
+    "tabOrder": 26000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -23,11 +23,11 @@
                       "Entity": "Sample - Superstore"
                     }
                   },
-                  "Property": "Region"
+                  "Property": "Segment"
                 }
               },
-              "queryRef": "Sample - Superstore.Region",
-              "nativeQueryRef": "Region",
+              "queryRef": "Sample - Superstore.Segment",
+              "nativeQueryRef": "Segment",
               "active": true
             }
           ]
@@ -235,7 +235,7 @@
             "showAxisTitle": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }
@@ -301,7 +301,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Average Shipping Days by Region'"
+                  "Value": "'Average Shipping Days by Segment'"
                 }
               }
             },
